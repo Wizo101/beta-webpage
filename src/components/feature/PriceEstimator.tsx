@@ -62,8 +62,8 @@ const PriceEstimator: React.FC = () => {
         sortable: true,
       },
       {
-        name: "Unit Price (Php)", //unit price
-        selector: (row: Item) => `Php 10.00`, 
+        name: "Unit Price (Php)", 
+        selector: (row: Item) => `Php ${row.unitPrice.toFixed(2)}`, 
         sortable: false,
       },
       {
